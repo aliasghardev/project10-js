@@ -5,7 +5,7 @@
 ![23](https://github.com/aliasghardev/project10-js/assets/144837096/952846a2-939a-4f38-b4f7-56d086c14957)
 
 
-- [Demo Project](https://aliasghardev.github.io/Accordion-menu/)
+- [Demo Project](https://aliasghardev.github.io/project10-js/)
 
 - Developed by aliasghar gholami
 
