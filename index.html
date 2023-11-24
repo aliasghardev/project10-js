@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    <main class=" w-full font-primary bg-white">
+
+        <!-- header -->
+        <div class="w-full h-16 bg-slate-700">
+            <nav class="w-full h-full hidden md:block ">
+                <ul class="w-full h-full flex justify-center items-center cursor-pointer">
+                    <li class="nav relative w-[20%] border-r-2 justify-evenly h-full items-center flex text-lg tran capitalize bg-slate-700 text-white hover:bg-yellow-600 "><i class="bi bi-list"></i> all departments <i class="bi bi-caret-down"></i>
+                        <ul class="absolute left-0 text-lg top-16 flex flex-wrap justify-center items-center bg-slate-300">
+                            <li class="w-full py-2 text-black hover:text-yellow-600 border">women's clothing</li>
+                            <li class="w-full py-2 text-black hover:text-yellow-600 border">men's clothing</li>
+                            <li class="w-full py-2 text-black hover:text-yellow-600 border">underwear</li>
+                            <li class="w-full py-2 text-black hover:text-yellow-600 border">brand fashion</li>
+                            <li class="w-full py-2 text-black hover:text-yellow-600 border">kid's clothing</li>
+                            <li class="w-full py-2 text-black hover:text-yellow-600 border">shoes</li>
+                            <li class="w-full py-2 text-black hover:text-yellow-600 border">luxury brands</li>
+                            <li class="w-full py-2 text-black hover:text-yellow-600 border">brand outdoor apparel</li>
+                        </ul>
+                    </li>
+                    <li class="w-[10%] border-r-2 h-full items-center flex justify-center text-lg capitalize bg-slate-700 text-white hover:bg-yellow-600 tran">home</li>
+                    <li class="w-[10%] border-r-2 h-full items-center flex justify-center text-lg capitalize bg-slate-700 text-white hover:bg-yellow-600 tran">shop</li>
+                    <li class="w-[10%] border-r-2 h-full items-center flex justify-center text-lg capitalize bg-slate-700 text-white hover:bg-yellow-600 tran">collection</li>
+                    <li class="w-[10%] border-r-2 h-full items-center flex justify-center text-lg capitalize bg-slate-700 text-white hover:bg-yellow-600 tran">blog</li>
+                    <li class="w-[10%] border-r-2 h-full items-center flex justify-center text-lg capitalize bg-slate-700 text-white hover:bg-yellow-600 tran">contact</li>
+                    <li class="w-[10%] border-r-2 h-full items-center flex justify-center text-lg capitalize bg-slate-700 text-white hover:bg-yellow-600 tran">pages</li>
+                </ul>
+            </nav>
+
+            <div class="w-full flex lg:hidden">
+                <button onclick="nav()" class="flex lg:hidden  w-full justify-end items-center cursor-pointer relative"><i class="text-3xl mr-5 text-white tran hover:rotate-90 bi bi-list p-3"></i></button>
+                <ul class="w-full mt-16 flex-wrap text-xl capitalize bg-slate-700 text-white hidden absolute menu">
+                    <li class="w-full flex justify-start py-3 hover:text-black hover:bg-slate-300 transition"><a href="">home</a></li>
+                    <li class="w-full flex justify-start py-3 hover:text-black hover:bg-slate-300 transition"><a href="">shop</a></li>
+                    <li class="w-full flex justify-start py-3 hover:text-black hover:bg-slate-300 transition"><a href="">collection</a></li>
+                    <li class="w-full flex justify-start py-3 hover:text-black hover:bg-slate-300 transition"><a href="">blog</a></li>
+                    <li class="w-full flex justify-start py-3 hover:text-black hover:bg-slate-300 transition"><a href="">contact</a></li>
+                    <li class="w-full flex justify-start py-3 hover:text-black hover:bg-slate-300 transition"><a href="">pages</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="w-full lg:h-screen overflow-hidden ">
+            <div id="bgsec1" class="w-full h-full flex flex-wrap justify-between tran items-center bg-[url('../img/hero-1.jpg')] bg-cover bg-center">
+                <span onclick="sec1()" class="w-1/12 text-3xl  cursor-pointer bg11"><i class="bi bi-chevron-left"></i></span>
+                <div class="w-10/12 capitalize ">
+                    <span class="text-yellow-600 text-xl">bag.kid</span>
+                    <h2 id="anime1" class="my-3 md:text-6xl text-xl font-bold  ">black friday</h2>
+                    <p id="anime2"  class="md:w-1/3 w-full mb-10 text-sm text-slate-500 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore dicta fuga suscipit ducimus, perferendis in laboriosam eaque.</p>
+                    <span id="anime3" class="p-3 mt-5 bg-yellow-600 cursor-pointer text-white md:text-xl ">shop now</span>
+                </div>
+                <span onclick="sec1()" class="w-1/12 text-3xl text-end  cursor-pointer"><i class="bi bi-chevron-right"></i></span>
+            </div>
+        </section>
+
+        <section class="w-full bg-white flex flex-wrap justify-evenly my-10">
+            <div class="md:w-3/12 w-full h-60 border flex justify-center items-center bg-[url('../img/banner-1.jpg')] bg-cover bg-center"><h2 class="p-2 capitalize md:text-2xl bg-white">men's</h2><span class="border-zinc-950 border absolute tran hover:w-60 hover:h-40 w-24 h-12 opacity-0 hover:opacity-100"></span></div>
+            <div class="md:w-3/12 w-full h-60 border flex justify-center items-center bg-[url('../img/banner-2.jpg')] bg-cover bg-center"><h2 class="p-2 capitalize md:text-2xl bg-white">women's</h2><span class="border-zinc-950 border absolute tran hover:w-60 hover:h-40 w-32 h-12 opacity-0 hover:opacity-100"></span></div>
+            <div class="md:w-3/12 w-full h-60 border flex justify-center items-center bg-[url('../img/banner-3.jpg')] bg-cover bg-center"><h2 class="p-2 capitalize md:text-2xl bg-white">kid's</h2><span class="border-zinc-950 border absolute tran hover:w-60 hover:h-40 w-20 h-12 opacity-0 hover:opacity-100"></span></div>
+        </section>
+
+        <section class="w-full bg-white flex flex-wrap justify-evenly h-screen items-center">
+            <div class="md:w-3/12 w-full h-5/6 bg-[url('../img/women-large.jpg')] bg-cover bg-center border flex flex-wrap justify-center items-center text-white">
+                <h3 class=" text-6xl font-bold">women's <p class="h-fit text-2xl underline text-center">discover more</p></h3>
+                
+            </div>
+
+            <div class="w-8/12 h-full hidden md:block">
+                <nav class="w-full h-1/6">
+                    <ul class="w-full h-full flex flex-wrap justify-center items-center">
+                        <li class="mx-3 capitalize text-2xl text-slate-400">clothing</li>
+                        <li class="mx-3 capitalize text-2xl text-slate-400">handbag</li>
+                        <li class="mx-3 capitalize text-2xl text-slate-400">shoes</li>
+                        <li class="mx-3 capitalize text-2xl text-slate-400">accessories</li>
+                    </ul>
+                </nav>
+
+                <div class=" h-5/6 flex  justify-between items-center pt-5 overflow-hidden relative">
+                    <span onclick="next2()" class="text-3xl cursor-pointer absolute left-0 z-10"><i class="bi bi-chevron-left"></i></span>
+                    <span onclick="next2()" class="text-3xl cursor-pointer absolute right-0 z-10"><i class="bi bi-chevron-right"></i></span>
+                    
+                    <div id="slider2" class="w-[133%]  h-full absolute justify-evenly right-[-0%] flex tran ">
+                        <figure class="w-3/12 mx-1">
+                            <img class="w-full" src="img/women-1.jpg" alt="">
+                            <figcaption class="w-full">
+                                <p class="text-center text-slate-500 my-4 capitalize">coat</p>
+                                <h5 class="text-center text-2xl capitalize">pure pineapple</h5>
+                                <p class="text-center text-yellow-500 text-2xl font-bold  ">$ 14.00</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="w-3/12 mx-1">
+                            <img class="w-full" src="img/women-2.jpg" alt="">
+                            <figcaption class="w-full">
+                                <p class="text-center text-slate-500 my-4 capitalize">coat</p>
+                                <h5 class="text-center text-2xl capitalize">guanzhou sweater</h5>
+                                <p class="text-center text-yellow-500 text-2xl font-bold  ">$ 13.00</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="w-3/12 mx-1">
+                            <img class="w-full" src="img/women-3.jpg" alt="">
+                            <figcaption class="w-full">
+                                <p class="text-center text-slate-500 my-4 capitalize">towel</p>
+                                <h5 class="text-center text-2xl capitalize">pure pineapple</h5>
+                                <p class="text-center text-yellow-500 text-2xl font-bold  ">$ 34.00</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="w-3/12 mx-1">
+                            <img class="w-full" src="img/women-4.jpg" alt="">
+                            <figcaption class="w-full">
+                                <p class="text-center text-slate-500 my-4 capitalize">towel</p>
+                                <h5 class="text-center text-2xl capitalize">converse shoes</h5>
+                                <p class="text-center text-yellow-500 text-2xl font-bold  ">$ 34.00</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full h-screen flex justify-center items-center  overflow-hidden bg-white">
+            <div class="w-11/12 h-5/6  bg-[url('../img/time-bg.jpg')] bg-cover bg-center">
+                <div class="md:w-1/2 w-full h-full flex flex-wrap justify-center p-10">
+                    <h4 class="capitalize md:text-5xl font-bold  text-center">deal of the week</h4>
+                    <p class="capitalize hidden md:block w-2/3 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed repellat consequatur, molestias velit impedit dicta minus omnis.</p>
+                    <p class="capitalize w-2/3 text-2xl text-center"><strong class="text-yellow-600">$35.00</strong> / hanbag</p>
+                    <div class="w-10/12 flex justify-evenly text-2xl capitalize">
+                        <div class="w-fit h-fit p-3 bg-white"><span class="text-yellow-600 font-bold ">29</span><p>days</p></div>
+                        <div class="w-fit h-fit p-3 bg-white"><span class="text-yellow-600 font-bold ">12</span><p>hrs</p></div>
+                        <div class="w-fit h-fit p-3 bg-white"><span class="text-yellow-600 font-bold ">41</span><p>mins</p></div>
+                        <div class="w-fit h-fit p-3 bg-white"><span class="text-yellow-600 font-bold " id="sec5"></span><p>secs</p></div>
+                    </div>
+                    <span class="capitalize text-2xl h-fit p-3 cursor-pointer bg-yellow-600 text-white text-center">shop now</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full bg-white flex flex-wrap justify-evenly h-screen items-center">
+            
+
+            <div class="w-8/12 h-full hidden md:block">
+                <nav class="w-full h-1/6">
+                    <ul class="w-full h-full flex flex-wrap justify-center items-center">
+                        <li class="mx-3 capitalize text-2xl text-slate-400">clothing</li>
+                        <li class="mx-3 capitalize text-2xl text-slate-400">handbag</li>
+                        <li class="mx-3 capitalize text-2xl text-slate-400">shoes</li>
+                        <li class="mx-3 capitalize text-2xl text-slate-400">accessories</li>
+                    </ul>
+                </nav>
+
+                <div class=" h-5/6 flex  justify-between items-center pt-5 overflow-hidden relative">
+                    <span onclick="next6()" class="text-3xl cursor-pointer absolute left-0 z-10"><i class="bi bi-chevron-left"></i></span>
+                    <span onclick="next6()" class="text-3xl cursor-pointer absolute right-0 z-10"><i class="bi bi-chevron-right"></i></span>
+                    
+                    <div id="slider6" class="w-[133%]  h-full absolute justify-evenly right-[-0%] flex tran ">
+                        <figure class="w-3/12 mx-1">
+                            <img class="w-full" src="img/man-1.jpg" alt="">
+                            <figcaption class="w-full">
+                                <p class="text-center text-slate-500 my-4 capitalize">coat</p>
+                                <h5 class="text-center text-2xl capitalize">pure pineapple</h5>
+                                <p class="text-center text-yellow-500 text-2xl font-bold  ">$ 14.00</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="w-3/12 mx-1">
+                            <img class="w-full" src="img/man-2.jpg" alt="">
+                            <figcaption class="w-full">
+                                <p class="text-center text-slate-500 my-4 capitalize">coat</p>
+                                <h5 class="text-center text-2xl capitalize">guanzhou sweater</h5>
+                                <p class="text-center text-yellow-500 text-2xl font-bold  ">$ 13.00</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="w-3/12 mx-1">
+                            <img class="w-full" src="img/man-3.jpg" alt="">
+                            <figcaption class="w-full">
+                                <p class="text-center text-slate-500 my-4 capitalize">towel</p>
+                                <h5 class="text-center text-2xl capitalize">pure pineapple</h5>
+                                <p class="text-center text-yellow-500 text-2xl font-bold  ">$ 34.00</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="w-3/12 mx-1">
+                            <img class="w-full" src="img/man-4.jpg" alt="">
+                            <figcaption class="w-full">
+                                <p class="text-center text-slate-500 my-4 capitalize">towel</p>
+                                <h5 class="text-center text-2xl capitalize">converse shoes</h5>
+                                <p class="text-center text-yellow-500 text-2xl font-bold  ">$ 34.00</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:w-3/12 w-full h-5/6 bg-[url('../img/man-large.jpg')] bg-cover bg-center border flex flex-wrap justify-center items-center text-white">
+                <h3 class=" text-6xl font-bold">men's <p class="h-fit text-2xl underline text-center">discover more</p></h3>
+                
+            </div>
+        </section>
+
+        <section class="w-full flex py-10 flex-wrap bg-white">
+            <figure class="md:w-1/6 w-1/2 transition-all relative">
+                <img src="img/insta-1.jpg" alt="" class="w-full ">
+                <h4 class="absolute transition-all text-5xl top-0 left-0 text-white bg-black/50 flex justify-center items-center w-full h-full opacity-0 hover:opacity-100"><i class="bi bi-instagram"></i></h4>
+            </figure>
+            <figure class="md:w-1/6 w-1/2 transition-all relative">
+                <img src="img/insta-2.jpg" alt="" class="w-full ">
+                <h4 class="absolute transition-all text-5xl top-0 left-0 text-white bg-black/50 flex justify-center items-center w-full h-full opacity-0 hover:opacity-100"><i class="bi bi-instagram"></i></h4>
+            </figure>
+            <figure class="md:w-1/6 w-1/2 transition-all relative">
+                <img src="img/insta-3.jpg" alt="" class="w-full ">
+                <h4 class="absolute transition-all text-5xl top-0 left-0 text-white bg-black/50 flex justify-center items-center w-full h-full opacity-0 hover:opacity-100"><i class="bi bi-instagram"></i></h4>
+            </figure>
+            <figure class="md:w-1/6 w-1/2 transition-all relative">
+                <img src="img/insta-4.jpg" alt="" class="w-full ">
+                <h4 class="absolute transition-all text-5xl top-0 left-0 text-white bg-black/50 flex justify-center items-center w-full h-full opacity-0 hover:opacity-100"><i class="bi bi-instagram"></i></h4>
+            </figure>
+            <figure class="md:w-1/6 w-1/2 transition-all relative">
+                <img src="img/insta-5.jpg" alt="" class="w-full ">
+                <h4 class="absolute transition-all text-5xl top-0 left-0 text-white bg-black/50 flex justify-center items-center w-full h-full opacity-0 hover:opacity-100"><i class="bi bi-instagram"></i></h4>
+            </figure>
+            <figure class="md:w-1/6 w-1/2 transition-all relative">
+                <img src="img/insta-6.jpg" alt="" class="w-full ">
+                <h4 class="absolute transition-all text-5xl top-0 left-0 text-white bg-black/50 flex justify-center items-center w-full h-full opacity-0 hover:opacity-100"><i class="bi bi-instagram"></i></h4>
+            </figure>
+        </section>
+
+        <section class="w-full md:h-screen py-10 bg-white">
+            <h3 class="text-center text-4xl font-bold capitalize">from the blog</h3>
+            <div class="w-full mt-5 flex flex-wrap justify-evenly items-center h-5/6">
+                <figure class="md:w-1/4 w-full">
+                    <img src="img/latest-1.jpg" alt="" class="w-full">
+                    <figcaption>
+                        <p class="mt-3 text-slate-500"><i class="bi bi-calendar text-yellow-600"></i> may 4,2023 <i class="bi bi-chat text-yellow-600"></i> 5</p>
+                        <h5 class="text-3xl font-bold my-3 capitalize">the best street style from london fashion week</h5>
+                        <p class="text-slate-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis eveniet modi fuga quam eos!</p>
+                    </figcaption>
+                </figure>
+                <figure class="md:w-1/4 w-full">
+                    <img src="img/latest-2.jpg" alt="" class="w-full">
+                    <figcaption>
+                        <p class="mt-3 text-slate-500"><i class="bi bi-calendar text-yellow-600"></i> may 4,2023 <i class="bi bi-chat text-yellow-600"></i> 5</p>
+                        <h5 class="text-3xl font-bold my-3 capitalize">vogue's ultimate guide to autumn/winter 2019 shoes</h5>
+                        <p class="text-slate-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis eveniet modi fuga quam eos!</p>
+                    </figcaption>
+                </figure>
+                <figure class="md:w-1/4 w-full">
+                    <img src="img/latest-3.jpg" alt="" class="w-full">
+                    <figcaption>
+                        <p class="mt-3 text-slate-500"><i class="bi bi-calendar text-yellow-600"></i> may 4,2023 <i class="bi bi-chat text-yellow-600"></i> 5</p>
+                        <h5 class="text-3xl font-bold my-3 capitalize">how to brighten your wardrobe with a dash of lime</h5>
+                        <p class="text-slate-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis eveniet modi fuga quam eos!</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="w-full bg-neutral-950 py-20 text-white flex flex-wrap">
+            <div class="md:w-1/4 w-full p-5 ">
+                <h3 class="text-2xl capitalize mt-5 font-bold">developer
+                    <ul>
+                        <li class="text-neutral-500 text-xl capitalize my-5">aliasghar gholami</li>
+                        <li class="text-neutral-500 text-xl">phone:09306511606</li>
+                        <li class=" flex w-full  py-5 ">
+                            <a class="text-3xl m-3 p-2 rounded-full bg-slate-600 hover:bg-yellow-600 transition-all"  href="https://www.linkedin.com/in/aliasghar-gholami-a1229a290"><i class="bi bi-linkedin"></i></a>
+                            <a  class="text-3xl m-3 p-2 rounded-full bg-slate-600 hover:bg-yellow-600 transition-all" href="https://github.com/aliasghardev"><i class="bi bi-github"></i></a>
+                            <a class="text-3xl m-3 p-2 rounded-full bg-slate-600 hover:bg-yellow-600 transition-all"  href="https://www.instagram.com/aliasghar.gholami_dev"><i class="bi bi-instagram"></i></a>
+                        </li>
+                    </ul>
+                </h3>
+                
+            </div>
+            <div class="md:w-1/4 w-full p-5 ">
+                <h3 class="text-2xl capitalize mt-5 font-bold">information
+                    <ul>
+                        <li class="text-xl my-2 text-neutral-500">about us</li>
+                        <li class="text-xl my-2 text-neutral-500">checkout</li>
+                        <li class="text-xl my-2 text-neutral-500">contact</li>
+                        <li class="text-xl my-2 text-neutral-500">servius</li>
+                    </ul>
+                </h3>
+                
+            </div>
+            <div class="md:w-1/4 w-full p-5 ">
+                <h3 class="text-2xl capitalize mt-5 font-bold">my account
+                    <ul>
+                        <li class="text-xl my-2 text-neutral-500">my account</li>
+                        <li class="text-xl my-2 text-neutral-500">contact</li>
+                        <li class="text-xl my-2 text-neutral-500">shopping Cart</li>
+                        <li class="text-xl my-2 text-neutral-500">shop</li>
+                    </ul>
+                </h3>
+                
+            </div>
+            <div class="md:w-1/4 w-full p-5 ">
+                <h3 class="text-2xl capitalize mt-5 font-bold">join our newsletter now
+                    <ul>
+                        <li class="text-xl text-neutral-500 capitalize my-5">Get E-mail updates about our latest shop and special offers.</li>
+                        <li class="text-xl flex h-10">
+                            <div class="w-3/4"><input class="w-full h-full" type="text" placeholder="enter your E-mail"></div>
+                            <div class="w-fit  bg-yellow-600 flex items-center cursor-pointer"><p>subscrib</p></div>
+                        </li>
+                        
+                    </ul>
+                </h3>
+                
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <script>
+
+        // header
+        function nav(){
+            document.getElementsByClassName('menu')[0].classList.toggle('flex')
+            document.getElementsByClassName('menu')[0].classList.toggle('hidden')
+        }
+
+        // section1
+        function sec1(){
+            document.getElementById('bgsec1').classList.toggle("bg-[url('../img/hero-1.jpg')]")
+            document.getElementById('bgsec1').classList.toggle("bg-[url('../img/hero-2.jpg')]")
+            document.getElementById('anime1').classList.add("animate-sec1h2")
+            document.getElementById('anime2').classList.add("animate-sec1span1")
+            document.getElementById('anime3').classList.add("animate-sec1span1")
+            setTimeout(() => {
+                document.getElementById('anime1').classList.remove("animate-sec1h2")
+                document.getElementById('anime2').classList.remove("animate-sec1span1")
+                document.getElementById('anime3').classList.remove("animate-sec1span1")
+            }, 1500);
+        }
+
+        // section 2
+        
+        function next2(){
+            document.getElementById('slider2').classList.toggle('right-[-33%]')
+        }
+
+
+        // section 5
+
+        let counter=60;
+        for(let i=0;i<counter;i++){
+                setTimeout(() => {
+                document.querySelector('#sec5').innerHTML = counter-i;
+                console.log(i);
+            }, (i*1000));
+            
+        }
+        
+        
+        // section 6
+        function next6(){
+            document.getElementById('slider6').classList.toggle('right-[-33%]')
+        }
+        
+
+    </script>
+</body>
+</html>
